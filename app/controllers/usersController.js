@@ -11,6 +11,7 @@ module.exports = {
       if(err){
         console.log(err);
       } else {
+        res.cookie('userIdCookie', newUser.id)
         res.json(newUser.id);
       }
     })

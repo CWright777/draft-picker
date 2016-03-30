@@ -11,4 +11,7 @@ module.exports = function(app){
   app.post('/items',function(req,res){
     Items.create(req,res);
   })
+  app.post('/wishes', function(req,res){
+    Wishes.create(req,res);
+  })
 };

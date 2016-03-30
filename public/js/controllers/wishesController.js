@@ -1,11 +1,12 @@
-angular.module('wishesCtrl', []).controller('wishesController', function($scope,User,$location,Wish,Item){
+angular.module('wishesCtrl', []).controller('wishesController', function($scope,User,$location,Wish,Item,User){
+  $scope.currentUser = User.currentUser;
   Item.index(function(items){
     $scope.items = items;
-  })
-  //$scope.addItem = function(){
-    //Item.create($scope.newItem, function(items){
-      //$scope.items = items;
-      //$scope.newItem = {};
+  });
+  //$scope.addWish = function(){
+    //Wish.create($scope.newWish, function(wishes){
+      //$scope.wishes = wishes;
+      //$scope.newWishes = {};
     //})
-  //}
+  //};
 })
