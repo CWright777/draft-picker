@@ -2,6 +2,10 @@ angular.module('exampleApp',[
     'ngRoute',
     'appRoutes',
     'usersCtrl',
+    'itemsCtrl',
+    'wishesCtrl',
+    'wishService',
+    'itemService',
     'userService',
     'lobbiesCtrl'
 ])

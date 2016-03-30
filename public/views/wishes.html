@@ -1,0 +1,9 @@
+<div>
+  <form ng-submit="addWish()">
+    <select ng-model="newWish.itemId">
+      <option ng-repeat="item in items" value="{{item._id}}">{{item.name}}</option>
+    </select>
+    <input type="submit">
+  </form>
+  {{items}}
+</div>
